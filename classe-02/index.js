@@ -23,3 +23,30 @@ const alunos = [
     }
 ];
 
+const alunosResumido = [];
+
+alunos.map(x => {
+    const {apelido, signo, bandaFavorita, serieFavorita, roupaDeDormir : y, ...alunoResumido} = x;    
+    alunosResumido.push(alunoResumido);
+});
+
+console.log(alunosResumido);
+
+// OPÇÃO 2 
+
+// const alunosResumido = [];
+
+// alunos.map(aluno => {
+//     const { nome, idade, email, curso } = aluno;
+//     const alunoResumido = {
+//         nome: nome,
+//         idade: idade,
+//         email: email,
+//         curso: curso
+//     };
+
+//     alunosResumido.push(alunoResumido);
+
+// })
+
+// console.log(alunosResumido);

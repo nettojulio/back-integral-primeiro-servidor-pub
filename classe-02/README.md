@@ -64,9 +64,9 @@ Após a criação o novo array **alunosResumido** deverá ser impresso no consol
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [X] Resolver o exercício
+- [X] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [X] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [X] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `nodeJS` `módulo 2` `exercício de classe` `desestruturacao` `desestructuring`
