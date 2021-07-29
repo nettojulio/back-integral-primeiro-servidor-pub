@@ -26,7 +26,7 @@ const alunos = [
 const alunosResumido = [];
 
 alunos.map(x => {
-    const {apelido, signo, bandaFavorita, serieFavorita, roupaDeDormir : y, ...alunoResumido} = x;    
+    const {apelido, signo, bandaFavorita, serieFavorita, roupaDeDormir, ...alunoResumido} = x;    
     alunosResumido.push(alunoResumido);
 });
 
@@ -50,3 +50,21 @@ console.log(alunosResumido);
 // })
 
 // console.log(alunosResumido);
+
+// OPÇÕES
+
+// com for
+// const alunosResumido = [];
+// for (let { nome, idade, email, curso } of alunos) {
+//     alunosResumido.push({ nome: nome, idade: idade, email: email, curso: curso });
+// }
+
+// forma longa com map
+// const alunosResumido = alunos.map(resumo);
+// function resumo(aluno) {
+//     const { nome, idade, email, curso } = aluno;
+//     return { nome, idade, email, curso };
+// }
+
+// o mesmo que 
+// const alunosResumido = alunos.map(({ nome, idade, email, curso }) => ({ nome, idade, email, curso }));
