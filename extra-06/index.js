@@ -47,12 +47,12 @@ app.get('/continuar', (req, res) => {
     } else if (!iniciar) {
         console.log('\nSolicitação Redundante:\nContinuar Contagem em curso!\n')
         res.send('Solicitação Inválida!')
-    } else if (!iniciar && pausar) {
+    } else {
         console.log('\nSolicitação atual:\nRetomar Contagem!\n')
         pausar = false;
         iniciar = true;
         inciarContagem();
-        res.send('Cronômetro continuando!')
+        res.send('Cronômetro continuando!');
     }
 });
 

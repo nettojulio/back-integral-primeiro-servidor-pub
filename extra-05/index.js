@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     }
 });
 
-app.get('/remover', (req, res) => {
+app.delete('/remover', (req, res) => {
     console.log(`Solicitação de extração\nPosição: ${req.query.indice}`);
 
     if (req.query.indice < jogadores.length && req.query.indice >= 0) {
@@ -35,7 +35,7 @@ app.get('/remover', (req, res) => {
 });
 
 
-app.get('/adicionar', (req, res) => {
+app.post('/adicionar', (req, res) => {
     const {nome, indice} = req.query;
     if (nome !== '' && !indice){
         console.log(`Solicitação de adição\nNome: ${nome}`);
@@ -46,7 +46,7 @@ app.get('/adicionar', (req, res) => {
         if (Number(indice) < jogadores.length) {
             console.log(req.query)
             jogadores.splice(Number(indice), 0, nome);
-            res.send(jogadores);
+            res.send(`${jogadores}`);
         } else {
             console.log(req.query)
             res.send(`O índice informado (${indice}) não existe no array. Novo jogador não adicionado.`);
