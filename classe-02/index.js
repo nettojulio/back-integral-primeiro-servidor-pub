@@ -26,7 +26,7 @@ const alunos = [
 const alunosResumido = [];
 
 alunos.map(x => {
-    const {apelido, signo, bandaFavorita, serieFavorita, roupaDeDormir, ...alunoResumido} = x;    
+    const { apelido, signo, bandaFavorita, serieFavorita, roupaDeDormir, ...alunoResumido } = x;
     alunosResumido.push(alunoResumido);
 });
 
